@@ -12,7 +12,7 @@ public class Aufgabe_2B_1 {
         do {
             System.out.println("Geben Sie A B C oder D ein");
             buchstabe = (char) System.in.read();
-            Character.toUpperCase(buchstabe);
+            buchstabe = Character.toUpperCase(buchstabe);
         } while (buchstabe == ('A' | 'B' | 'C' | 'D'));
 
         // Checken ob eingabe korrekt
@@ -20,23 +20,27 @@ public class Aufgabe_2B_1 {
         switch (buchstabe) {
             case 'A':
                 System.out.println("TOP");
-                note = 1;
+                note = 4;
                 break;
             case 'B':
                 System.out.println("recht gut");
-                note = 2;
+                note = 3;
                 break;
             case 'C':
                 System.out.println("geht so");
-                note = 3;
+                note = 2;
                 break;
             case 'D':
                 System.out.println("flop");
-                note = 4;
+                note = 1;
                 break;
             default:
-                System.out.println("Falsch. Starten sie neu.");
+                System.out.println("Ungueltig");
                 break;
+        }
+
+        for (int i = 0; i < note; i++) {
+            System.out.print("*");
         }
 
     }
