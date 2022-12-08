@@ -9,14 +9,14 @@ public class Aufgabe_2B_1 {
         int note = 0;
         char buchstabe = 'a';
 
+        // Eingabe
         do {
-            System.out.println("Geben Sie A B C oder D ein");
+            System.out.println("Geben Sie A B C oder D ein:");
             buchstabe = (char) System.in.read();
             buchstabe = Character.toUpperCase(buchstabe);
         } while (buchstabe == ('A' | 'B' | 'C' | 'D'));
 
-        // Checken ob eingabe korrekt
-
+        // Mehrfachauswahl
         switch (buchstabe) {
             case 'A':
                 System.out.println("TOP");
@@ -35,10 +35,10 @@ public class Aufgabe_2B_1 {
                 note = 1;
                 break;
             default:
-                System.out.println("Ungueltig");
                 break;
         }
 
+        // Ausgabe
         for (int i = 0; i < note; i++) {
             System.out.print("*");
         }
