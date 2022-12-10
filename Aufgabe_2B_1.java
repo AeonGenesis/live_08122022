@@ -39,9 +39,8 @@ public class Aufgabe_2B_1 {
         }
 
         // Ausgabe
-        for (int i = 0; i < note; i++) {
+        for (int i = 0; i < note; i++)
             System.out.print("*");
-        }
 
     }
 
